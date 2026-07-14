@@ -1,0 +1,166 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --primary-color: #1e1e1e;
+  --primary-hover: #717171;
+  --accent-color: #602f37;
+  --admin-badge: #313131;
+  --shopper-badge: #198754;
+}
+
+body {
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+  background: white;
+  min-height: 100vh;
+  color: #333;
+}
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  backdrop-filter: blur(10px);
+}
+
+.dashboard-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.header-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.role-badge {
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.role-badge.admin {
+  background-color: var(--admin-badge);
+}
+
+.role-badge.shopper {
+  background-color: var(--shopper-badge);
+}
+
+.card-custom {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.112);
+  padding: 25px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.card-title-custom {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 10px;
+}
+
+.nav-pills-custom .nav-link {
+  color: #475569;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-pills-custom .nav-link:hover {
+  background-color: #f1f5f9;
+}
+
+.nav-pills-custom .nav-link.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.table-custom {
+  margin-bottom: 0;
+}
+
+.table-custom th {
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.table-custom td {
+  vertical-align: middle;
+}
+
+.alert-dismiss-custom {
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form-label-custom {
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.form-control-custom, .form-select-custom {
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  transition: border-color 0.2s ease;
+}
+
+.form-control-custom:focus, .form-select-custom:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.no-data-msg {
+  text-align: center;
+  color: #94a3b8;
+  padding: 30px;
+}
